@@ -8,5 +8,10 @@ export function createCourse(request: Request, response: Response) {
     duration: 22
   });
 
+  CreateCourseService.execute({
+    name: 'TypeScript',
+    educator: 'Paulo',
+  });
+
   return response.send();
 };

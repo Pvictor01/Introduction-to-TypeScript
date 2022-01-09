@@ -11,6 +11,10 @@ function createCourse(request, response) {
         educator: 'PV',
         duration: 22
     });
+    CreateCourseService_1.default.execute({
+        name: 'TypeScript',
+        educator: 'Paulo',
+    });
     return response.send();
 }
 exports.createCourse = createCourse;
